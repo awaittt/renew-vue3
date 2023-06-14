@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script>
+        const Root={
+            data(){
+                return{
+                    message:'我好爱vue3'
+                } 
+            },
+            template:`<h1>hello vue3,{{message}}</h1>`
+        }
+
+        const app=Vue.createApp(Root)
+
+        app.mount("#root")
+
+    </script>
+</body>
+</html>
